@@ -1,0 +1,18 @@
+{
+  "content": {
+    "primary": {
+      "value": "#ffffff",
+      "type": "color"
+    },
+    "disabled": {
+      "value": "rgba(255,255,255,0.25)",
+      "type": "color"
+    }
+  },
+  "border": {
+    "secondary": {
+      "value": "#fff",
+      "type": "color"
+    }
+  }
+}

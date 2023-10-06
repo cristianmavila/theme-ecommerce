@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --backgroundPrimary: #d9d9d9;
+    --backgroundSecondary: #f5f5f5;
+    --backgroundDisabled: #ebebeb;
+    --backgroundTertiary: #EEEEEE;
+    --backgroundHighlight: #FFE58F;
+    --backgroundIcon: #000000;
+    --backgroundBrandPrimary: #231F20;
+    --backgroundBrandSecondary: #; /* Not in use */
+    --backgroundAlert: #; /* Not in use */
+    --backgroundPrimaryReversed: #000000;
+    --backgroundBrandPrimaryReversed: #fff;
+    --backgroundSelected: #FCFCFC;
+    --contentPrimary: #000000e0;
+    --contentSecondary: rgba(0,0,0,0.65);
+    --contentActive: #ffffff;
+    --contentAccent: #ff4d4f;
+    --contentDisabled: rgba(0,0,0,0.25);
+    --contentWarning: #FAAD14;
+    --contentPositive: #52C41A;
+    --contentNegative: #DF1642;
+    --contentTertiary: #000000;
+    --contentAction: #;
+    --contentInactive: #;
+    --contentInformation: #;
+    --contentVisited: #;
+    --contentPrimaryReversed: #fff;
+    --contentActionReversed: #;
+    --contentVisitedReversed: #;
+    --contentInput: #9E9E9E;
+    --borderPrimary: #9e9e9e;
+    --borderSecondary: #000000;
+    --borderTertiary: #fff;
+    --borderActive: #000000;
+    --borderInactive: #; /* Not in use */
+    --borderNegative: #FF4D4F;
+    --borderWarning: #faad14;
+    --borderPositive: #52c41a;
+    --borderInformation: #; /* Not in use */
+    --borderPrimaryReversed: #;
+    --borderSeparator: #EEEEEE;
+    --decorativeDesertSand: #e0cfb5;
+    --decorativeGreyGoose: #c8d0d0;
+    --decorativeWispPink: #fcf5f5;
+    --decorativeLinen: #fcf0e7;
+    --hoverPrimary: #000000;
+    --activePrimary: #000000;
+    --fontFamiliesFuturaPt: futura-pt;
+    --fontFamiliesAdobeGaramondPro: adobe-garamond-pro;
+    --lineHeightsLeadingNone: 1; /* 1 */
+    --lineHeightsLeadingTight: 1.25; /* 1.25 */
+    --lineHeightsLeadingSnug: 1.375; /* 1.375 */
+    --lineHeightsLeadingNormal: 1.5; /* 1.5 */
+    --lineHeightsLeadingRelaxed: 1.625; /* 1.625 */
+    --lineHeightsLeading3: 12px;
+    --lineHeightsLeadingLoose: 2;
+    --lineHeightsLeading4: 16px;
+    --lineHeightsLeading5: 22px;
+    --lineHeightsLeading8: 32px;
+    --lineHeightsLeading6: 24px;
+    --lineHeightsLeading7: 28px;
+    --lineHeightsLeading9: 32px;
+    --lineHeightsLeading10: 40px;
+    --fontWeightFontThin: 100;
+    --fontWeightFontExtralight: 200;
+    --fontWeightFontLight: 300;
+    --fontWeightFontNormal: 400;
+    --fontWeightFontMedium: 500;
+    --fontWeightFontSemibold: 600;
+    --fontWeightFontBold: 700;
+    --fontWeightFontExtrabold: 800;
+    --fontWeightFontBlack: 900;
+    --fontWeightItalic: Italic;
+    --fontSizeTextXs: 12px;
+    --fontSizeTextSm: 14px;
+    --fontSizeTextBase: 16px;
+    --fontSizeTextLg: 18px;
+    --fontSizeTextXl: 20px;
+    --fontSizeText2xl: 24px;
+    --fontSizeText3xl: 30px;
+    --fontSizeText4xl: 32px;
+    --fontSizeText5xl: 40px;
+    --fontSizeText6xl: 48px;
+    --fontSizeText7xl: 72px;
+    --fontSizeText8xl: 96px;
+    --fontSizeText9xl: 128px;
+    --letterSpacingTrackingNormal: 0em;
+    --letterSpacingTrackingWider: 0.1em;
+    --letterSpacingTrackingWide: 0.05em;
+    --letterSpacingTrackingTight: -0.025em;
+    --letterSpacingTrackingTighter: -0.05em;
+    --letterSpacingTrackingWidest: 0.2em;
+    --textCaseNone: none;
+    --textCaseUppercase: uppercase;
+    --textDecorationNone: none;
+    --textDecorationUnderline: underline;
+    --textDecorationLineThrough: line-through;
+    --paragraphIndent0: 0px;
+    --borderRadiusRoundedNone: 0px;
+    --borderRadiusRoundedSm: 2px;
+    --borderRadiusRounded: 4px;
+    --borderRadiusRoundedMd: 6px;
+    --borderRadiusRoundedLg: 8px;
+    --borderRadiusRoundedXl: 12px;
+    --borderRadiusRounded2xl: 16px;
+    --borderRadiusRounded3xl: 24px;
+    --borderRadiusRoundedFull: 9999px;
+    --borderWidthBorder: 1px;
+    --borderWidthBorder0: 0;
+    --borderWidthBorder2: 2px;
+    --borderWidthBorder4: 4px;
+    --borderWidthBorder8: 8px;
+   /* custom variable*/
+   --muted: 210 40% 96.1%;
+   --muted-foreground: 215.4 16.3% 46.9%;
+  }
+}
+
+@layer base {
+  html {
+    @apply font-sans text-base;
+  }
+}
+
+@layer components {
+
+}

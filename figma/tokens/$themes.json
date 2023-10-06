@@ -1,0 +1,21 @@
+[
+  {
+    "id": "ecd35b49904416a09e1b0e4395401d1f8b8d57c3",
+    "name": "lightmode",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "global": "enabled"
+    },
+    "group": "internal_themes_no_group"
+  },
+  {
+    "id": "3cea149eb336c49dfbf715cbdea58aea9c05ac88",
+    "name": "darktheme",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "global": "enabled",
+      "darktheme": "enabled"
+    },
+    "group": "internal_themes_no_group"
+  }
+]
