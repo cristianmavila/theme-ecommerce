@@ -137,9 +137,8 @@ module.exports = {
         black: "var(--fontWeightFontBlack)",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", ...fontFamily.sans],
+        sans: ["var(--fontFamiliesJetBrainsMono)", ...fontFamily.sans],
         serif: ["var(--font-serif)", ...fontFamily.serif],
-        sansDm: ["var(--font-dm-sans)", ...fontFamily.serif]
       },
       borderRadius: {
         "rounded-none": "var(--borderRadiusRoundedNone)",

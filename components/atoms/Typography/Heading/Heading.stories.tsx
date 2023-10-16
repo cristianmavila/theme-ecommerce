@@ -8,7 +8,7 @@ import { StoryFn, Meta } from "@storybook/react";
 import Heading, { HeadingVariants } from ".";
 
 export default {
-  title: "Heading",
+  title: "Atoms/Heading",
   component: Heading,
   argTypes: {
     variant: {

@@ -1,8 +1,10 @@
 // Import dependencies
 import type { Preview } from "@storybook/react";
+import React from "react";
 
 // Import styles
-import '../styles/global.css';
+import { JetBrainsMono } from "@/styles/fonts";
+import "@/styles/global.css";
 
 const preview: Preview = {
   parameters: {
@@ -17,6 +19,13 @@ const preview: Preview = {
       appDirectory: true,
     },
   },
+  decorators: [
+    (Story) => (
+      <div className={`${JetBrainsMono.variable}`}>
+        <Story />
+      </div>
+    ),
+  ],
 };
 
 export default preview;

@@ -8,7 +8,7 @@ import { StoryFn, Meta } from "@storybook/react";
 import { default as RichTextComponent } from "./RichText";
 
 export default {
-  title: "Rich Text",
+  title: "Atoms/Rich Text",
   component: RichTextComponent,
   parameters: {
     layout: "centered",

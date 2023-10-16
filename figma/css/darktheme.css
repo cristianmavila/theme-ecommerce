@@ -7,23 +7,23 @@
   --backgroundPrimary: #d9d9d9;
   --backgroundSecondary: #f5f5f5;
   --backgroundDisabled: #ebebeb;
-  --backgroundTertiary: #EEEEEE;
-  --backgroundHighlight: #FFE58F;
+  --backgroundTertiary: #eeeeee;
+  --backgroundHighlight: #ffe58f;
   --backgroundIcon: #000000;
-  --backgroundBrandPrimary: #231F20;
+  --backgroundBrandPrimary: #231f20;
   --backgroundBrandSecondary: #; /* Not in use */
   --backgroundAlert: #; /* Not in use */
   --backgroundPrimaryReversed: #000000;
   --backgroundBrandPrimaryReversed: #fff;
-  --backgroundSelected: #FCFCFC;
+  --backgroundSelected: #fcfcfc;
   --contentPrimary: #ffffff;
-  --contentSecondary: rgba(0,0,0,0.65);
+  --contentSecondary: rgba(0, 0, 0, 0.65);
   --contentActive: #ffffff;
   --contentAccent: #ff4d4f;
-  --contentDisabled: rgba(255,255,255,0.25);
-  --contentWarning: #FAAD14;
-  --contentPositive: #52C41A;
-  --contentNegative: #DF1642;
+  --contentDisabled: rgba(255, 255, 255, 0.25);
+  --contentWarning: #faad14;
+  --contentPositive: #52c41a;
+  --contentNegative: #df1642;
   --contentTertiary: #000000;
   --contentAction: #;
   --contentInactive: #;
@@ -32,26 +32,24 @@
   --contentPrimaryReversed: #fff;
   --contentActionReversed: #;
   --contentVisitedReversed: #;
-  --contentInput: #9E9E9E;
+  --contentInput: #9e9e9e;
   --borderPrimary: #9e9e9e;
   --borderSecondary: #fff;
   --borderTertiary: #fff;
   --borderActive: #000000;
   --borderInactive: #; /* Not in use */
-  --borderNegative: #FF4D4F;
+  --borderNegative: #ff4d4f;
   --borderWarning: #faad14;
   --borderPositive: #52c41a;
   --borderInformation: #; /* Not in use */
   --borderPrimaryReversed: #;
-  --borderSeparator: #EEEEEE;
+  --borderSeparator: #eeeeee;
   --decorativeDesertSand: #e0cfb5;
   --decorativeGreyGoose: #c8d0d0;
   --decorativeWispPink: #fcf5f5;
   --decorativeLinen: #fcf0e7;
   --hoverPrimary: #000000;
   --activePrimary: #000000;
-  --fontFamiliesFuturaPt: futura-pt;
-  --fontFamiliesAdobeGaramondPro: adobe-garamond-pro;
   --lineHeightsLeadingNone: 1; /* 1 */
   --lineHeightsLeadingTight: 1.25; /* 1.25 */
   --lineHeightsLeadingSnug: 1.375; /* 1.375 */

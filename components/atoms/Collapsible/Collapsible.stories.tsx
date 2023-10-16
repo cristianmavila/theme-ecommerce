@@ -3,11 +3,15 @@ import React from "react";
 
 // Import Story dependencies
 import { StoryFn, Meta } from "@storybook/react";
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./Collapsible";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "./Collapsible";
 
 // Collapsible Story
 export default {
-  title: "Collapsible",
+  title: "Atoms/Collapsible",
   component: Collapsible,
   argTypes: {},
 } as Meta<typeof Collapsible>;
@@ -15,8 +19,9 @@ export default {
 const Template: StoryFn<typeof Collapsible> = () => (
   <Collapsible>
     <CollapsibleTrigger>Click here to see the content.</CollapsibleTrigger>
-    <CollapsibleContent className="bg-slate-200 p-2 rounded-md">
-      Yes. Free to use for personal and commercial projects. No attribution required.
+    <CollapsibleContent className="rounded-md bg-slate-200 p-2">
+      Yes. Free to use for personal and commercial projects. No attribution
+      required.
     </CollapsibleContent>
   </Collapsible>
 );

@@ -7,7 +7,7 @@ import { Input, InputVariants } from "./Input";
 
 // Button Story
 export default {
-  title: "Input",
+  title: "Atoms/Input",
   component: Input,
   argTypes: {
     variant: {

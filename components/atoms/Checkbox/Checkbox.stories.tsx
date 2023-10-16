@@ -7,7 +7,7 @@ import { Checkbox } from "./Checkbox";
 
 // Checkbox Story
 export default {
-  title: "Checkbox",
+  title: "Atoms/Checkbox",
   component: Checkbox,
   argTypes: {},
 } as Meta<typeof Checkbox>;

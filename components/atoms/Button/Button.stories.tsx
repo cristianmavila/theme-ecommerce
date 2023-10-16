@@ -7,7 +7,7 @@ import { Button, buttonVariants } from "./Button";
 
 // Button Story
 export default {
-  title: "Button",
+  title: "Atoms/Button",
   component: Button,
   argTypes: {
     variant: {
@@ -31,7 +31,9 @@ export default {
   },
 } as Meta<typeof Button>;
 
-const Template: StoryFn<typeof Button> = (args) => <Button {...args}>Button</Button>;
+const Template: StoryFn<typeof Button> = (args) => (
+  <Button {...args}>Button</Button>
+);
 
 // Button Story Variations
 export const Default = Template.bind({});

@@ -2,13 +2,19 @@
 import React from "react";
 
 // Import Story dependencies
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./Select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "./Select";
 
 import { StoryFn, Meta } from "@storybook/react";
 
 // Select Story
 export default {
-  title: "Select",
+  title: "Atoms/Select",
   component: Select,
   argTypes: {},
 } as Meta<typeof Select>;

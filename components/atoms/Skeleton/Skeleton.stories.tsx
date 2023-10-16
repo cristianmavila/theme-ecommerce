@@ -7,7 +7,7 @@ import { Skeleton } from "./Skeleton";
 
 // Skeleton Story
 export default {
-  title: "Skeleton",
+  title: "Atoms/Skeleton",
   component: Skeleton,
   argTypes: {
     className: {

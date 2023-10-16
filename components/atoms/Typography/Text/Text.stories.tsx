@@ -8,7 +8,7 @@ import { StoryFn, Meta } from "@storybook/react";
 import Text, { textVariants } from ".";
 
 export default {
-  title: "Text",
+  title: "Atoms/Text",
   component: Text,
   argTypes: {
     variant: {

@@ -12,7 +12,7 @@ import { VariantProps, cva } from "class-variance-authority";
 
 // Link style variations
 export const LinkVariants = cva(
-  "inline-flex items-center border-b text-base leading-6 no-underline lg:border-b-2 lg:text-lg lg:leading-7",
+  "inline-flex items-center border-b text-base no-underline lg:border-b-2",
   {
     variants: {
       variant: {

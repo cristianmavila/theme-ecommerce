@@ -48,7 +48,7 @@ export default function Text({
   styles,
   className,
   variant,
-  tag,
+  tag = "p",
   decoration,
 }: TextProps) {
   const Tag = tag;

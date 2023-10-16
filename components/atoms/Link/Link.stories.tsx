@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react";
 import Link from ".";
 
 export default {
-  title: "Link",
+  title: "Atoms/Link",
   component: Link,
   argTypes: {
     className: {
