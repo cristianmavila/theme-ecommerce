@@ -1,8 +1,8 @@
 // Import React dependencies
 import React from "react";
+import { StoryFn, Meta } from "@storybook/react";
 
 // Import Story dependencies
-import { StoryFn, Meta } from "@storybook/react";
 import Header from "./Header";
 import { NavigationMenuProps } from "@/components/molecules/NavigationMenu/types";
 import { Search, ShoppingBag } from "lucide-react";
@@ -69,6 +69,97 @@ const NavigationMenuItems: NavigationMenuProps[] = [
           },
         ],
       },
+      {
+        id: 9,
+        href: "/women/categories",
+        title: "Categories",
+        children: [
+          {
+            id: 10,
+            href: "/women/basic-tees",
+            title: "Basic Tees",
+          },
+          {
+            id: 11,
+            href: "/women/artwork-tees",
+            title: "Artwork Tees",
+          },
+          {
+            id: 12,
+            href: "/women/bottoms",
+            title: "Bottoms",
+          },
+          {
+            id: 13,
+            href: "/women/underwear",
+            title: "Underwear",
+          },
+          {
+            id: 14,
+            href: "/women/accessories",
+            title: "Accessories",
+          },
+        ],
+      },
+      {
+        id: 15,
+        href: "/women/collection",
+        title: "Collection",
+        children: [
+          {
+            id: 16,
+            href: "/women/everything",
+            title: "Everything",
+          },
+          {
+            id: 17,
+            href: "/women/core",
+            title: "Core",
+          },
+          {
+            id: 18,
+            href: "/women/new-arrivals",
+            title: "New Arrivals",
+          },
+          {
+            id: 19,
+            href: "/women/sale",
+            title: "Sale",
+          },
+        ],
+      },
+      {
+        id: 20,
+        href: "/women/brands",
+        title: "Brands",
+        children: [
+          {
+            id: 21,
+            href: "/women/full-nelson",
+            title: "Full Nelson",
+          },
+          {
+            id: 22,
+            href: "/women/my-way",
+            title: "My way",
+          },
+          {
+            id: 23,
+            href: "/women/re-arranged",
+            title: "Re-Arranged",
+          },
+          {
+            id: 24,
+            href: "/women/counterfeit",
+            title: "Counterfeit",
+          },
+          {
+            id: 25,
+            href: "/women/significant-other",
+            title: "Significant Other",
+          },
+        ],
+      },
     ],
   },
   {
@@ -109,7 +200,7 @@ const SecondaryMenuItems: NavigationMenuProps[] = [
 // };
 
 const Template: StoryFn<typeof Header> = (args) => (
-  <div className="relative min-h-[500px] bg-slate-400">
+  <div className="relative min-h-[2000px] bg-slate-400">
     <Header {...args} />
   </div>
 );
@@ -117,6 +208,16 @@ const Template: StoryFn<typeof Header> = (args) => (
 // Header Story Variations
 export const Default = Template.bind({});
 Default.args = {
+  navigationMenuItems: NavigationMenuItems,
+  secondaryMenuItems: SecondaryMenuItems,
+};
+
+// Header black with white links
+export const Black = Template.bind({});
+Black.args = {
+  textColor: "white",
+  backgroundColor: "black",
+  menuPosition: "left",
   navigationMenuItems: NavigationMenuItems,
   secondaryMenuItems: SecondaryMenuItems,
 };

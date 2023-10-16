@@ -17,7 +17,7 @@ export const LinkVariants = cva(
     variants: {
       variant: {
         default:
-          "border-borderPrimary text-contentAction hover:text-borderPrimary",
+          "border-backgroundPrimary text-contentAction hover:text-backgroundPrimary",
         white:
           "group border-borderTertiary text-contentSecondary hover:border-contentAction",
       },

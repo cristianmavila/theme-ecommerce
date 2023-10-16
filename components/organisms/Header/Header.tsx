@@ -3,9 +3,6 @@
 // next dependencies
 import dynamic from "next/dynamic";
 
-// custom hook
-import { useScrollDirection } from "@/hooks/useScrollDirection";
-
 // Import Component dependencies
 import { VariantProps, cva } from "class-variance-authority";
 
@@ -29,8 +26,8 @@ export const headerVariants = cva(
         black: "text-black",
       },
       backgroundColor: {
-        white: "bg-white hover:bg-white",
-        black: "bg-black hover:bg-black",
+        white: "bg-white",
+        black: "bg-black",
       },
     },
     defaultVariants: {
@@ -84,39 +81,36 @@ export default function Header({
   logoPosition = "left",
   className,
 }: HeaderProps) {
-  const scrollDirection = useScrollDirection();
-  const changeBackgroundColor = scrollDirection
-    ? backgroundColor
-    : "bg-transparent";
   return (
     <header
-      className={cn(
-        headerVariants({ textColor, backgroundColor }),
-        className,
-        changeBackgroundColor
-      )}
+      className={cn(headerVariants({ textColor, backgroundColor }), className)}
     >
-      <div className="container flex items-center lg:justify-between">
+      <div className="container flex items-center gap-4 lg:justify-between">
+        {/* Mobile menu */}
         <MobileMenu
           navigationMenuItems={navigationMenuItems}
           secondaryMenuitems={secondaryMenuItems}
         />
+        {/* Logo */}
         <Link
           href={homepageUrl}
           className={cn(
-            "w-16 border-none lg:my-2 lg:w-32",
+            "w-16 border-none lg:my-2 lg:w-auto",
             logoVariants({ logoPosition })
           )}
         >
           <Logo />
         </Link>
+        {/* Desktop navigation */}
         <NavigationDesktop
           navigationMenuItems={navigationMenuItems}
-          className={menuVariants({ menuPosition })}
+          className={cn(menuVariants({ menuPosition }))}
+          backgroundColor={cn(headerVariants({ textColor, backgroundColor }))}
         />
-        <div className="order-last flex min-w-[46px] flex-none justify-end gap-4 lg:min-w-[196px]">
+        {/* Secondary navigation */}
+        <div className="order-last flex min-w-[46px] flex-none justify-end gap-4">
           {secondaryMenuItems?.map(
-            ({ id, title, href, icon }: NavigationMenuProps) => (
+            ({ id, href, icon }: NavigationMenuProps) => (
               <Link key={id} href={href} className="border-none">
                 {icon}
               </Link>

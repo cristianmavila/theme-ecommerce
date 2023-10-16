@@ -12,33 +12,31 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/molecules/NavigationMenu";
-import Heading from "@/components/atoms/Typography/Heading";
+import Text from "@/components/atoms/Typography/Text";
 import { NavigationMenuProps } from "@/components/molecules/NavigationMenu/types";
 
 interface NavigationDesktopProps {
+  // Navigation Array with links
   navigationMenuItems: NavigationMenuProps[];
   /** Custom ClassNames */
   className?: string;
+  // Custom css class for background
+  backgroundColor?: string;
 }
 
 export default function NavigationDesktop({
-  navigationMenuItems,
   className,
+  backgroundColor,
+  navigationMenuItems,
 }: NavigationDesktopProps) {
   return (
     <NavigationMenu className={className}>
-      <NavigationMenuList>
+      <NavigationMenuList className="gap-4">
         {navigationMenuItems?.map(
-          ({
-            id,
-            title,
-            href,
-            children,
-            target,
-            backgroundColor,
-          }: NavigationMenuProps) => {
+          ({ id, title, href, children, target }: NavigationMenuProps) => {
             return (
               <NavigationMenuItem key={id}>
+                {/* Navigation menu link with children */}
                 {children && children.length > 0 ? (
                   <>
                     {!!href ? (
@@ -60,52 +58,45 @@ export default function NavigationDesktop({
                     )}
                     <NavigationMenuContent>
                       <div
-                        className={cn(
-                          "min-h-[353px] bg-backgroundBrandPrimaryReversed py-8 text-black",
-                          backgroundColor
-                        )}
+                        className={cn(backgroundColor, "min-h-[353px] lg:py-8")}
                       >
                         <div className="container">
-                          <div className="flex justify-between gap-6">
-                            <div className="grid min-w-[266px] auto-cols-max grid-flow-col gap-4">
-                              {children?.map(
-                                ({ id, title, children, target }) => {
-                                  return (
-                                    <div key={id} className="flex flex-col">
-                                      <Heading variant="h5" className="pb-2">
-                                        {title}
-                                      </Heading>
-                                      {children?.map(
-                                        ({
-                                          id,
-                                          title,
-                                          href,
-                                          target,
-                                        }: NavigationMenuProps) => (
-                                          <Link
-                                            key={id}
-                                            href={href}
-                                            target={target}
-                                            legacyBehavior
-                                            passHref
-                                          >
-                                            <NavigationMenuLink className="border-none py-2 text-xs">
-                                              {title}
-                                            </NavigationMenuLink>
-                                          </Link>
-                                        )
-                                      )}
-                                    </div>
-                                  );
-                                }
-                              )}
-                            </div>
+                          <div className="grid grid-cols-4 gap-4">
+                            {children?.map(({ id, title, children }) => {
+                              return (
+                                <div key={id} className="flex flex-col">
+                                  <div className="grid gap-3">
+                                    <Text className="text-sm font-bold">
+                                      {title}
+                                    </Text>
+                                    {children?.map(
+                                      ({
+                                        id,
+                                        title,
+                                        href,
+                                        target,
+                                      }: NavigationMenuProps) => (
+                                        <Link
+                                          key={id}
+                                          href={href}
+                                          target={target}
+                                          className="border-none text-sm"
+                                        >
+                                          {title}
+                                        </Link>
+                                      )
+                                    )}
+                                  </div>
+                                </div>
+                              );
+                            })}
                           </div>
                         </div>
                       </div>
                     </NavigationMenuContent>
                   </>
                 ) : (
+                  // Navigation Menu without children
                   <Link href={href} target={target} legacyBehavior passHref>
                     <NavigationMenuLink
                       className={cn(navigationMenuTriggerStyle())}
